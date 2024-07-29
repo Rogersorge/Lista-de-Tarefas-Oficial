@@ -1,0 +1,265 @@
+body {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 472px;
+    gap: 32px;
+    background-color: #09090B;
+    font-family: "Inter", sans-serif;
+}
+
+.caixa-tarefas {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;    
+}
+
+#Cidade{
+    background-image: url(../img/map-pin.png);
+    background-repeat: no-repeat;
+    color: #f4f4f5;
+    background-color: #18181B;
+    background-position: 16px;  
+    border-radius: 8px; 
+    font-size: 14px;
+    border: 1px solid #18181B;
+    width: 280px;
+    height: 64px;
+}
+
+#Cidade::placeholder {
+    color: #f4f4f5;
+    padding-left: 44px;
+}
+
+.lista input{
+    width: 280px;
+    height: 56px;
+    border: 1px solid #27272A;
+    background-color: #09090B;
+    border-radius: 8px;    
+}
+
+#atividade {
+    background-image: url(../img/tag.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: 16px;
+    border: 1px solid #27272A;
+    font-size: 14px;
+}
+
+#atividade::placeholder{
+    color: #A1A1AA;
+    padding-right: 80px;
+}
+
+.data-hora input {
+    width: 280px;
+    height: 56px;
+}
+
+#dataInicio {
+    background-image: url(../img/calendar.svg);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: 16px;
+}
+
+#dataFim {
+    background-image: url(../img/clock.svg);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: 16px;
+}
+
+#dataInicio , #dataFim {
+    color: #f4f4f5;
+}
+
+button {
+    width: 280px;
+    height: 42px;
+    background-color: #BEF264;
+    border: none;
+    border-radius: 8px;
+    color: #1A2E05;
+    font-weight: 550;
+    font-size: 14px;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 37px;
+}
+
+.Atividade{
+    border: 1px solid black;
+    width: 648px;
+    height: 688px;
+    color: #FAFAFA;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 648px;
+    gap: 12px;
+}
+
+.atividade {
+    background-color: #18181B;
+    color: #f4f4f5;
+    border-radius: 12px;
+    display: flex;
+    font-size: 11px;
+    height: 40px;
+    align-items: center;
+    padding-inline: 16px;
+    justify-content: space-between;
+}
+
+time {
+    color: #A1A1AB;
+}
+
+.span {
+    display: flex;
+    gap: 12px;
+}
+
+input, select {
+    all: unset;
+}
+
+section input[type="checkbox"] {
+    position: absolute;
+    inset: 0;
+}
+
+section .span {
+    position: relative;
+    padding: 10px 16px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+section .span:has(:checked) .active,
+section .span .inactive {
+    display: block;
+}
+  
+section .span:has(:checked) .inactive,
+section .span .active {
+    display: none;
+}
+  
+section .span > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+@media (max-width:375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-left: 472px;
+        gap: 32px;
+        background-color: #09090B;
+        font-family: "Inter", sans-serif;
+        margin: 0;
+        padding: 20px;
+    }
+
+    #Cidade{
+        background-image: url(../img/map-pin.png);
+        background-repeat: no-repeat;
+        color: #f4f4f5;
+        background-color: #18181B;
+        background-position: 16px;  
+        border-radius: 8px; 
+        font-size: 14px;
+        border: 1px solid #18181B;
+        width: 330px;
+        height: 64px;
+    }
+
+    .lista input{
+        width: 330px;
+        height: 56px;
+        border: 1px solid #27272A;
+        background-color: #09090B;
+        border-radius: 8px;    
+    }
+
+    .data-hora input {
+        width: 330px;
+        height: 56px;
+    }
+
+    #dataFim {
+        background-image: url(../img/clock.svg);
+        background-repeat: no-repeat;
+        text-align: center;
+        background-position: 16px;
+    }
+
+    button {
+        width: 330px;
+        height: 42px;
+        background-color: #BEF264;
+        border: none;
+        border-radius: 8px;
+        color: #1A2E05;
+        font-weight: 550;
+        font-size: 14px;
+    }
+
+    h1 {
+        margin-bottom: 24px;
+        font-size: 24px;
+        padding-left: 100px;
+    }
+
+    .Atividade{
+        border: 1px solid black;
+        width: 338px;
+        height: 688px;
+        color: #FAFAFA;
+    }
+
+    .atividade {
+        background-color: #18181B;
+        color: #f4f4f5;
+        border-radius: 12px;
+        display: flex;
+        font-size: 9px;
+        height: 40px;
+        align-items: center;
+        padding-inline: 16px;
+        justify-content: space-between;
+        width: 305px;
+    }
+
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
